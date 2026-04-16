@@ -1,86 +1,50 @@
-# HackToFuture 4.0 — Template
-
-Welcome to your official HackToFuture 4 repository.
-
-This repository template will be used for development, tracking progress, and final submission of your project. Ensure that all work is committed here within the allowed hackathon duration.
-
----
-
-### Instructions for the teams:
-
-- Fork the Repository and name the forked repo in this convention: hacktofuture4-team_id (for eg: hacktofuture4-A01)
-
----
-
-## Rules
-
-- Work must be done ONLY in the forked repository
-- Only Four Contributors are allowed.
-- After 36 hours, Please make PR to the Main Repository. A Form will be sent to fill the required information.
-- Do not copy code from other teams
-- All commits must be from individual GitHub accounts
-- Please provide meaningful commits for tracking.
-- Do not share your repository with other teams
-- Final submission must be pushed before the deadline
-- Any violation may lead to disqualification
-
----
-
-# The Final README Template 
+# Team Sphinx | Argo-Agentic Intelligence 🌊
 
 ## Problem Statement / Idea
+* **What is the problem?**
+Oceanographic telemetry from the Argo float network is often siloed in complex, technical formats, making it difficult for researchers to query data using natural language or perform high-speed spatial-semantic analysis.
 
-Clearly describe the problem you are solving.
+* **Why is it important?**
+Fast access to metrics like ocean heat content and oxygen anomalies is critical for climate adaptation. Current workflows lack the ability to bridge the gap between native language queries (Hindi/Bengali) and technical SQL databases.
 
-- What is the problem?
-- Why is it important?
-- Who are the target users?
-
----
+* **Who are the target users?**
+Marine data scientists, environmental policy-makers, and researchers requiring offline-first, high-accuracy scientific assistance for deep-ocean telemetry.
 
 ## Proposed Solution
+* **What are you building?**
+We have built the **Agentic Ocean Intelligence Hyperpipeline**—a localized ML framework and Supabase-ready ingestion system that transforms raw telemetry into a RAG-augmented knowledge base.
 
-Explain your approach:
+* **How does it solve the problem?**
+By fusing **AutoGluon** deterministic models for query routing and **LangChain** for local LLM orchestration, we automate the path from a researcher's natural language question to a precise SQL or vector-based answer.
 
-- What are you building?
-- How does it solve the problem?
-- What makes your solution unique?
-
----
+* **What makes your solution unique?**
+The system is **Sovereign and Cross-Lingual**. It uses **IndicNLP** to translate native queries into English SQL logic and operates entirely on local infrastructure (LM Studio/Ollama) to ensure total data privacy.
 
 ## Features
-
-List the core features of your project:
-
-- Feature 1
-- Feature 2
-- Feature 3
-
----
+* **Feature 1: Hybrid Routing Engine** – Uses AutoGluon `TabularPredictor` to categorize queries before passing them to LLMs, ensuring high-speed, zero-hallucination routing.
+* **Feature 2: Supabase pgvector/PostGIS Integration** – A high-performance importer that enables both 768-dim semantic search and complex spatial queries (e.g., profiles within 200km).
+* **Feature 3: Multi-Turn Scientific Memory** – Implements `ConversationBufferWindowMemory` and DiskCache to maintain context throughout complex research sessions.
 
 ## Tech Stack
-
-Mention all technologies used:
-
-- Frontend:
-- Backend:
-- Database:
-- APIs / Services:
-- Tools / Libraries:
-
----
+* **Frontend:** Streamlit
+* **Backend:** Python 3.10, LangChain, LM Studio, Ollama
+* **Database:** Supabase (PostgreSQL + pgvector + PostGIS)
+* **APIs / Services:** Local LLM API (localhost:1234), Local Ollama (localhost:11434)
+* **Tools / Libraries:** AutoGluon, IndicNLP, Pydantic, Pandas, NetCDF4
 
 ## Project Setup Instructions
 
-Provide clear steps to run your project:
-
 ```bash
-# Clone the repository
-git clone <repo-link>
+# 1. Install Dependencies
+pip install autogluon streamlit pandas requests pydantic langchain langchain-openai diskcache psycopg2-binary
 
-# Install dependencies
-...
+# 2. Setup Database Schema
+# Ensure 'new.env' is configured with your DIRECT_URL
+python argo_import_supabase.py --env-file new.env --data-dir "C:/path/to/data" --setup-only
 
-# Run the project
-...
-```
+# 3. Import Data & Generate Embeddings
+# Requires Ollama running 'nomic-embed-text'
+python argo_import_supabase.py --env-file new.env --data-dir "C:/path/to/data" --embed
+
+# 4. Launch Application
+python -m streamlit run hyperpipeline/chat.py
