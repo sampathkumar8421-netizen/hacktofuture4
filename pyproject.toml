@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "lily02-agentic"
-version = "2.0.0"
+name = "lily02"
+version = "2.1.0"
 authors = [
   { name="Sampath Kumar", email="sampathkumar8421@gmail.com" },
 ]

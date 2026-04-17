@@ -1,1 +1,0 @@
-SUCCESS_URL: https://joe-unmischievous-providencia.ngrok-free.dev
