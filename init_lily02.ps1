@@ -2,6 +2,12 @@
 
 Write-Host "🌊 Initializing Lily02 Scientific Workstation..." -ForegroundColor Cyan
 
+# Ensure we are in the project root
+$ProjectRoot = $PSScriptRoot
+if (-not $ProjectRoot) { $ProjectRoot = Get-Location }
+Set-Location $ProjectRoot
+Write-Host "Project Root: $ProjectRoot" -ForegroundColor DimGray
+
 # 1. Install Backend Dependencies
 Write-Host "`n[1/3] Installing Python Dependencies..." -ForegroundColor Yellow
 pip install -r requirements.txt
