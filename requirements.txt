@@ -1,14 +1,33 @@
-fastapi>=0.110.0
-uvicorn>=0.28.0
-pyngrok>=7.1.0
-python-dotenv>=1.0.1
-requests>=2.32.0
-pandas>=2.2.0
-numpy>=1.26.0
-rich>=13.7.0
-click>=8.1.0
-autogluon.tabular>=1.1.0
-langchain>=0.1.0
-langchain-openai>=0.1.0
-pydantic>=2.0.0
-psycopg[binary]>=3.2.0
+###############################################################################
+# Lily02 Scientific Workstation - Core Dependency Manifest (v2.2.1)
+# Optimized for Oceanographic Forensics and Agentic Reasoning
+###############################################################################
+
+# --- [ Layer 1: Production Web Framework ] ---
+fastapi~=0.110.0
+uvicorn[standard]~=0.28.0
+pyngrok~=7.1.0
+python-dotenv~=1.0.1
+psycopg[binary]~=3.2.0
+
+# --- [ Layer 2: Scientific Data & Forensics ] ---
+pandas~=2.2.0
+numpy~=1.26.0
+autogluon.tabular~=1.1.0   # Core AutoML Engine
+matplotlib~=3.8.0          # Scientific Visualization fallback
+plotly~=5.18.0            # Dynamic Web Analytics
+
+# --- [ Layer 3: Agentic Reasoning & RAG ] ---
+langchain~=0.1.0
+langchain-openai~=0.1.0
+pydantic~=2.0.0
+requests~=2.32.0
+
+# --- [ Layer 4: Premium Terminal Framework ] ---
+rich~=13.7.0               # High-Fidelity CLI Rendering
+click~=8.1.0               # Command Lifecycle Management
+prompt_toolkit~=3.0.0      # Interactive Session Handling
+
+###############################################################################
+# Elite Note: Versions pinned with '~=' for patch compatibility & stability.
+###############################################################################
