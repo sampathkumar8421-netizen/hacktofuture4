@@ -27,6 +27,10 @@ class ParentOrchestrator:
         self.fast_model = os.getenv("FAST_MODEL", "gpt-4o-mini")
         self.fast_base_url = os.getenv("FAST_MODEL_URL", "https://api.openai.com/v1") if self.openai_api_key else self.base_url
 
+        # Logic for gpt-oss-120b
+        self.slow_model = os.getenv("LOCAL_AGENT_MODEL", "gpt-oss-120b")
+        print(f"[Core] Reasoning Engine Target: {self.slow_model}")
+
         try:
             from autogluon.tabular import TabularPredictor
             import pandas as pd

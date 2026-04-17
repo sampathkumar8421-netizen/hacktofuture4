@@ -8,7 +8,7 @@ export default function Sidebar() {
         { to: "/analysis", icon: <BarChart2 size={18} />, label: "Ocean Analytics" },
         { to: "/data-ops", icon: <Activity size={18} />, label: "Data Ops Monitor" },
         { to: "/security", icon: <Shield size={18} />, label: "Security & Logs" },
-        { to: "/api", icon: <Code size={18} />, label: "API Hub" },
+        { to: "/local-install", icon: <Layers size={18} />, label: "Local Installation" },
         { to: "/help", icon: <HelpCircle size={18} />, label: "Support" },
     ];
 

@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import ChatRoom from './pages/ChatRoom';
 import Dashboard from './pages/Dashboard';
 import DataOps from './pages/DataOps';
+import LocalInstallation from './pages/LocalInstallation';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<ChatRoom />} />
           <Route path="/analysis" element={<Dashboard />} />
           <Route path="/data-ops" element={<DataOps />} />
+          <Route path="/local-install" element={<LocalInstallation />} />
         </Routes>
       </main>
     </div>
