@@ -1,0 +1,8 @@
+python-dotenv>=1.0.1
+psycopg[binary]>=3.2.0
+pandas>=2.2.0
+pyarrow>=16.0.0
+
+# AutoGluon (may download Torch and other deps)
+autogluon>=1.2.0
+

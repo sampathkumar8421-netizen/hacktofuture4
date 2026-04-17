@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Environment Variables
+.env
+new.env
+
+# AutoGluon
+AutogluonModels/
+automl_agentic/.venv/
+automl_agentic/models/
+
+# Node / Frontend
+lily02_frontend/node_modules/
+lily02_frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store

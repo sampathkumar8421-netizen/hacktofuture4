@@ -1,0 +1,118 @@
+id,category,feature_name,description,units,data_type,sensor_type,mathematical_deps,graphical_reps,typical_range,created_at
+1,core_physical,PRES,Core Physical Measurements variable PRES,decibar,numerical,CTD,[],[],,2026-04-16 04:44:20.209607
+2,core_physical,TEMP,Core Physical Measurements variable TEMP,degree_Celsius,numerical,CTD,[],[],,2026-04-16 04:44:20.209607
+3,core_physical,PSAL,Core Physical Measurements variable PSAL,PSU,numerical,CTD,[],[],,2026-04-16 04:44:20.209607
+4,core_physical,CNDC,Core Physical Measurements variable CNDC,mhos/m,numerical,CTD,[],[],,2026-04-16 04:44:20.209607
+5,core_physical,PRES_QC,Quality control flag for PRES,1,numerical,CTD,[],[],,2026-04-16 04:44:20.209607
+6,core_physical,TEMP_QC,Quality control flag for TEMP,1,numerical,CTD,[],[],,2026-04-16 04:44:20.209607
+7,core_physical,PSAL_QC,Quality control flag for PSAL,1,numerical,CTD,[],[],,2026-04-16 04:44:20.209607
+8,core_physical,PRES_ADJUSTED,Adjusted/delayed mode value for PRES,unknown,numerical,CTD,[],[],,2026-04-16 04:44:20.209607
+9,core_physical,TEMP_ADJUSTED,Adjusted/delayed mode value for TEMP,unknown,numerical,CTD,[],[],,2026-04-16 04:44:20.209607
+10,core_physical,PSAL_ADJUSTED,Adjusted/delayed mode value for PSAL,unknown,numerical,CTD,[],[],,2026-04-16 04:44:20.209607
+11,bgc_dissolved_oxygen,DOXY,BGC - Dissolved Oxygen variable DOXY,micromole/kg,numerical,Oxygen optode,[],[],,2026-04-16 04:44:20.209607
+12,bgc_dissolved_oxygen,DOXY2,BGC - Dissolved Oxygen variable DOXY2,unknown,numerical,Oxygen optode,[],[],,2026-04-16 04:44:20.209607
+13,bgc_dissolved_oxygen,DOXY3,BGC - Dissolved Oxygen variable DOXY3,unknown,numerical,Oxygen optode,[],[],,2026-04-16 04:44:20.209607
+14,bgc_dissolved_oxygen,MOLAR_DOXY,BGC - Dissolved Oxygen variable MOLAR_DOXY,unknown,numerical,Oxygen optode,[],[],,2026-04-16 04:44:20.209607
+15,bgc_dissolved_oxygen,TEMP_DOXY,BGC - Dissolved Oxygen variable TEMP_DOXY,unknown,numerical,Oxygen optode,[],[],,2026-04-16 04:44:20.209607
+16,bgc_dissolved_oxygen,DOXY_QC,Quality control flag for DOXY,1,numerical,Oxygen optode,[],[],,2026-04-16 04:44:20.209607
+17,bgc_dissolved_oxygen,DOXY2_QC,Quality control flag for DOXY2,1,numerical,Oxygen optode,[],[],,2026-04-16 04:44:20.209607
+18,bgc_dissolved_oxygen,DOXY3_QC,Quality control flag for DOXY3,1,numerical,Oxygen optode,[],[],,2026-04-16 04:44:20.209607
+19,bgc_chlorophyll,CHLA,BGC - Chlorophyll variable CHLA,mg/m3,numerical,ECO fluorometer,[],[],,2026-04-16 04:44:20.209607
+20,bgc_chlorophyll,CHLA_FLUORESCENCE,BGC - Chlorophyll variable CHLA_FLUORESCENCE,unknown,numerical,ECO fluorometer,[],[],,2026-04-16 04:44:20.209607
+21,bgc_chlorophyll,CHLA_QC,Quality control flag for CHLA,1,numerical,ECO fluorometer,[],[],,2026-04-16 04:44:20.209607
+22,bgc_chlorophyll,CHLA_ADJUSTED,Adjusted/delayed mode value for CHLA,unknown,numerical,ECO fluorometer,[],[],,2026-04-16 04:44:20.209607
+23,bgc_nitrate,NITRATE,BGC - Nitrate variable NITRATE,micromole/kg,numerical,SUNA,[],[],,2026-04-16 04:44:20.209607
+24,bgc_nitrate,NITRATE_QC,Quality control flag for NITRATE,1,numerical,SUNA,[],[],,2026-04-16 04:44:20.209607
+25,bgc_nitrate,NITRATE_ADJUSTED,Adjusted/delayed mode value for NITRATE,unknown,numerical,SUNA,[],[],,2026-04-16 04:44:20.209607
+26,bgc_ph,PH_IN_SITU_TOTAL,BGC - pH variable PH_IN_SITU_TOTAL,1,numerical,Deep-Sea pH,[],[],,2026-04-16 04:44:20.209607
+27,bgc_ph,PH_IN_SITU_TOTAL_QC,Quality control flag for PH_IN_SITU_TOTAL,1,numerical,Deep-Sea pH,[],[],,2026-04-16 04:44:20.209607
+28,bgc_ph,PH_IN_SITU_TOTAL_ADJUSTED,Adjusted/delayed mode value for PH_IN_SITU_TOTAL,unknown,numerical,Deep-Sea pH,[],[],,2026-04-16 04:44:20.209607
+29,bgc_backscatter,BBP470,BGC - Backscatter variable BBP470,m-1,numerical,ECO BB,[],[],,2026-04-16 04:44:20.209607
+30,bgc_backscatter,BBP532,BGC - Backscatter variable BBP532,m-1,numerical,ECO BB,[],[],,2026-04-16 04:44:20.209607
+31,bgc_backscatter,BBP700,BGC - Backscatter variable BBP700,m-1,numerical,ECO BB,[],[],,2026-04-16 04:44:20.209607
+32,bgc_backscatter,BBP700_2,BGC - Backscatter variable BBP700_2,unknown,numerical,ECO BB,[],[],,2026-04-16 04:44:20.209607
+33,bgc_backscatter,BBP470_QC,Quality control flag for BBP470,1,numerical,ECO BB,[],[],,2026-04-16 04:44:20.209607
+34,bgc_backscatter,BBP532_QC,Quality control flag for BBP532,1,numerical,ECO BB,[],[],,2026-04-16 04:44:20.209607
+35,bgc_backscatter,BBP700_QC,Quality control flag for BBP700,1,numerical,ECO BB,[],[],,2026-04-16 04:44:20.209607
+36,bgc_backscatter,BBP470_ADJUSTED,Adjusted/delayed mode value for BBP470,unknown,numerical,ECO BB,[],[],,2026-04-16 04:44:20.209607
+37,bgc_backscatter,BBP532_ADJUSTED,Adjusted/delayed mode value for BBP532,unknown,numerical,ECO BB,[],[],,2026-04-16 04:44:20.209607
+38,bgc_backscatter,BBP700_ADJUSTED,Adjusted/delayed mode value for BBP700,unknown,numerical,ECO BB,[],[],,2026-04-16 04:44:20.209607
+39,bgc_cdom,CDOM,BGC - CDOM variable CDOM,ppb,numerical,ECO CDOM,[],[],,2026-04-16 04:44:20.209607
+40,bgc_cdom,CDOM_QC,Quality control flag for CDOM,1,numerical,ECO CDOM,[],[],,2026-04-16 04:44:20.209607
+41,bgc_cdom,CDOM_ADJUSTED,Adjusted/delayed mode value for CDOM,unknown,numerical,ECO CDOM,[],[],,2026-04-16 04:44:20.209607
+42,bgc_irradiance,DOWNWELLING_PAR,BGC - Irradiance variable DOWNWELLING_PAR,microMoleQuanta/m^2/sec,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+43,bgc_irradiance,DOWN_IRRADIANCE380,BGC - Irradiance variable DOWN_IRRADIANCE380,W/m^2/nm,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+44,bgc_irradiance,DOWN_IRRADIANCE412,BGC - Irradiance variable DOWN_IRRADIANCE412,unknown,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+45,bgc_irradiance,DOWN_IRRADIANCE443,BGC - Irradiance variable DOWN_IRRADIANCE443,unknown,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+46,bgc_irradiance,DOWN_IRRADIANCE490,BGC - Irradiance variable DOWN_IRRADIANCE490,unknown,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+47,bgc_irradiance,DOWN_IRRADIANCE555,BGC - Irradiance variable DOWN_IRRADIANCE555,unknown,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+48,bgc_irradiance,UP_RADIANCE412,BGC - Irradiance variable UP_RADIANCE412,unknown,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+49,bgc_irradiance,UP_RADIANCE443,BGC - Irradiance variable UP_RADIANCE443,unknown,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+50,bgc_irradiance,UP_RADIANCE490,BGC - Irradiance variable UP_RADIANCE490,unknown,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+51,bgc_irradiance,UP_RADIANCE555,BGC - Irradiance variable UP_RADIANCE555,unknown,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+52,bgc_irradiance,DOWNWELLING_PAR_QC,Quality control flag for DOWNWELLING_PAR,1,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+53,bgc_irradiance,DOWNWELLING_PAR_ADJUSTED,Adjusted/delayed mode value for DOWNWELLING_PAR,unknown,numerical,Radiometer,[],[],,2026-04-16 04:44:20.209607
+54,metadata,LATITUDE,Metadata variable LATITUDE,degrees_north,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+55,metadata,LONGITUDE,Metadata variable LONGITUDE,degrees_east,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+56,metadata,TIME,Metadata variable TIME,unknown,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+57,metadata,JULD,Metadata variable JULD,unknown,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+58,metadata,POSITION_QC,Quality control flag for POSITION,1,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+59,metadata,TIME_QC,Quality control flag for TIME,1,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+60,metadata,PLATFORM_NUMBER,Metadata variable PLATFORM_NUMBER,unknown,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+61,metadata,CYCLE_NUMBER,Metadata variable CYCLE_NUMBER,unknown,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+62,metadata,DIRECTION,Metadata variable DIRECTION,unknown,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+63,metadata,DATA_MODE,Metadata variable DATA_MODE,unknown,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+64,metadata,PLATFORM_TYPE,Metadata variable PLATFORM_TYPE,unknown,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+65,metadata,WMO_INST_TYPE,Metadata variable WMO_INST_TYPE,unknown,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+66,metadata,DATA_CENTRE,Metadata variable DATA_CENTRE,unknown,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+67,qc_flags,PROFILE_PRES_QC,Quality control flag for PROFILE_PRES,1,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+68,qc_flags,PROFILE_TEMP_QC,Quality control flag for PROFILE_TEMP,1,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+69,qc_flags,PROFILE_PSAL_QC,Quality control flag for PROFILE_PSAL,1,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+70,qc_flags,PROFILE_DOXY_QC,Quality control flag for PROFILE_DOXY,1,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+71,qc_flags,PROFILE_CHLA_QC,Quality control flag for PROFILE_CHLA,1,numerical,N/A,[],[],,2026-04-16 04:44:20.209607
+72,Core Physical Measurements,PRES,"Temperature, salinity, pressure from CTD sensors",decibar,,CTD,"['potential_temperature', 'potential_density', 'neutral_density', 'brunt_vaisala']","['profile', 'TS_diagram', 'section']",,2026-04-16 07:03:09.879192
+73,Core Physical Measurements,TEMP,"Temperature, salinity, pressure from CTD sensors",degree_Celsius,,CTD,"['potential_temperature', 'potential_density', 'neutral_density', 'brunt_vaisala']","['profile', 'TS_diagram', 'section']",,2026-04-16 07:03:09.879192
+74,Core Physical Measurements,PSAL,"Temperature, salinity, pressure from CTD sensors",PSU,,CTD,"['potential_temperature', 'potential_density', 'neutral_density', 'brunt_vaisala']","['profile', 'TS_diagram', 'section']",,2026-04-16 07:03:09.879192
+75,Core Physical Measurements,CNDC,"Temperature, salinity, pressure from CTD sensors",mhos/m,,CTD,"['potential_temperature', 'potential_density', 'neutral_density', 'brunt_vaisala']","['profile', 'TS_diagram', 'section']",,2026-04-16 07:03:09.879192
+76,BGC - Dissolved Oxygen,DOXY,Dissolved oxygen concentration,micromole/kg,,Oxygen optode,"['oxygen_saturation', 'AOU', 'oxygen_flux']","['oxygen_profile', 'saturation_curve']",,2026-04-16 07:03:09.879192
+77,BGC - Dissolved Oxygen,DOXY2,Dissolved oxygen concentration,,,Oxygen optode,"['oxygen_saturation', 'AOU', 'oxygen_flux']","['oxygen_profile', 'saturation_curve']",,2026-04-16 07:03:09.879192
+78,BGC - Dissolved Oxygen,DOXY3,Dissolved oxygen concentration,,,Oxygen optode,"['oxygen_saturation', 'AOU', 'oxygen_flux']","['oxygen_profile', 'saturation_curve']",,2026-04-16 07:03:09.879192
+79,BGC - Dissolved Oxygen,MOLAR_DOXY,Dissolved oxygen concentration,,,Oxygen optode,"['oxygen_saturation', 'AOU', 'oxygen_flux']","['oxygen_profile', 'saturation_curve']",,2026-04-16 07:03:09.879192
+80,BGC - Dissolved Oxygen,TEMP_DOXY,Dissolved oxygen concentration,,,Oxygen optode,"['oxygen_saturation', 'AOU', 'oxygen_flux']","['oxygen_profile', 'saturation_curve']",,2026-04-16 07:03:09.879192
+81,BGC - Chlorophyll,CHLA,Chlorophyll-a from fluorescence,mg/m3,,ECO fluorometer,"['primary_production', 'euphotic_depth', 'deep_chlorophyll_max']","['chlorophyll_profile', 'depth_integrated']",,2026-04-16 07:03:09.879192
+82,BGC - Chlorophyll,CHLA_FLUORESCENCE,Chlorophyll-a from fluorescence,,,ECO fluorometer,"['primary_production', 'euphotic_depth', 'deep_chlorophyll_max']","['chlorophyll_profile', 'depth_integrated']",,2026-04-16 07:03:09.879192
+83,BGC - Nitrate,NITRATE,Nitrate concentration from UV absorption,micromole/kg,,SUNA,"['N_star', 'nutricline_depth', 'seasonal_cycle']","['nitrate_profile', 'nutricline_map']",,2026-04-16 07:03:09.879192
+84,BGC - pH,PH_IN_SITU_TOTAL,Seawater pH measurements,1,,Deep-Sea pH,"['pH_anomaly', 'aragonite_saturation', 'revelle_factor']","['pH_profile', 'acidification_trend']",,2026-04-16 07:03:09.879192
+85,BGC - Backscatter,BBP470,Optical backscattering,m-1,,ECO BB,"['POC', 'particle_size_distribution', 'beam_attenuation']","['backscatter_profile', 'POC_estimate']",,2026-04-16 07:03:09.879192
+86,BGC - Backscatter,BBP532,Optical backscattering,m-1,,ECO BB,"['POC', 'particle_size_distribution', 'beam_attenuation']","['backscatter_profile', 'POC_estimate']",,2026-04-16 07:03:09.879192
+87,BGC - Backscatter,BBP700,Optical backscattering,m-1,,ECO BB,"['POC', 'particle_size_distribution', 'beam_attenuation']","['backscatter_profile', 'POC_estimate']",,2026-04-16 07:03:09.879192
+88,BGC - Backscatter,BBP700_2,Optical backscattering,,,ECO BB,"['POC', 'particle_size_distribution', 'beam_attenuation']","['backscatter_profile', 'POC_estimate']",,2026-04-16 07:03:09.879192
+89,BGC - CDOM,CDOM,Colored dissolved organic matter,ppb,,ECO CDOM,"['cdom_absorption', 'terrestrial_input']",['cdom_profile'],,2026-04-16 07:03:09.879192
+90,BGC - Irradiance,DOWNWELLING_PAR,PAR and spectral irradiance,microMoleQuanta/m^2/sec,,Radiometer,"['euphotic_depth', 'kd490', 'phytoplankton_absorption']","['light_profile', 'attenuation_curve']",,2026-04-16 07:03:09.879192
+91,BGC - Irradiance,DOWN_IRRADIANCE380,PAR and spectral irradiance,W/m^2/nm,,Radiometer,"['euphotic_depth', 'kd490', 'phytoplankton_absorption']","['light_profile', 'attenuation_curve']",,2026-04-16 07:03:09.879192
+92,BGC - Irradiance,DOWN_IRRADIANCE412,PAR and spectral irradiance,,,Radiometer,"['euphotic_depth', 'kd490', 'phytoplankton_absorption']","['light_profile', 'attenuation_curve']",,2026-04-16 07:03:09.879192
+93,BGC - Irradiance,DOWN_IRRADIANCE443,PAR and spectral irradiance,,,Radiometer,"['euphotic_depth', 'kd490', 'phytoplankton_absorption']","['light_profile', 'attenuation_curve']",,2026-04-16 07:03:09.879192
+94,BGC - Irradiance,DOWN_IRRADIANCE490,PAR and spectral irradiance,,,Radiometer,"['euphotic_depth', 'kd490', 'phytoplankton_absorption']","['light_profile', 'attenuation_curve']",,2026-04-16 07:03:09.879192
+95,BGC - Irradiance,DOWN_IRRADIANCE555,PAR and spectral irradiance,,,Radiometer,"['euphotic_depth', 'kd490', 'phytoplankton_absorption']","['light_profile', 'attenuation_curve']",,2026-04-16 07:03:09.879192
+96,BGC - Irradiance,UP_RADIANCE412,PAR and spectral irradiance,,,Radiometer,"['euphotic_depth', 'kd490', 'phytoplankton_absorption']","['light_profile', 'attenuation_curve']",,2026-04-16 07:03:09.879192
+97,BGC - Irradiance,UP_RADIANCE443,PAR and spectral irradiance,,,Radiometer,"['euphotic_depth', 'kd490', 'phytoplankton_absorption']","['light_profile', 'attenuation_curve']",,2026-04-16 07:03:09.879192
+98,BGC - Irradiance,UP_RADIANCE490,PAR and spectral irradiance,,,Radiometer,"['euphotic_depth', 'kd490', 'phytoplankton_absorption']","['light_profile', 'attenuation_curve']",,2026-04-16 07:03:09.879192
+99,BGC - Irradiance,UP_RADIANCE555,PAR and spectral irradiance,,,Radiometer,"['euphotic_depth', 'kd490', 'phytoplankton_absorption']","['light_profile', 'attenuation_curve']",,2026-04-16 07:03:09.879192
+100,Metadata,LATITUDE,"Position, time, and identification",degrees_north,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+101,Metadata,LONGITUDE,"Position, time, and identification",degrees_east,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+102,Metadata,TIME,"Position, time, and identification",,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+103,Metadata,JULD,"Position, time, and identification",,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+104,Metadata,POSITION_QC,"Position, time, and identification",,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+105,Metadata,TIME_QC,"Position, time, and identification",,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+106,Metadata,PLATFORM_NUMBER,"Position, time, and identification",,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+107,Metadata,CYCLE_NUMBER,"Position, time, and identification",,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+108,Metadata,DIRECTION,"Position, time, and identification",,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+109,Metadata,DATA_MODE,"Position, time, and identification",,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+110,Metadata,PLATFORM_TYPE,"Position, time, and identification",,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+111,Metadata,WMO_INST_TYPE,"Position, time, and identification",,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+112,Metadata,DATA_CENTRE,"Position, time, and identification",,,,"['trajectory', 'velocity', 'drift']","['trajectory_map', 'drift_vectors']",,2026-04-16 07:03:09.879192
+113,Quality Control,PROFILE_PRES_QC,Data quality flags,,,,['data_quality_assessment'],['qc_summary'],,2026-04-16 07:03:09.879192
+114,Quality Control,PROFILE_TEMP_QC,Data quality flags,,,,['data_quality_assessment'],['qc_summary'],,2026-04-16 07:03:09.879192
+115,Quality Control,PROFILE_PSAL_QC,Data quality flags,,,,['data_quality_assessment'],['qc_summary'],,2026-04-16 07:03:09.879192
+116,Quality Control,PROFILE_DOXY_QC,Data quality flags,,,,['data_quality_assessment'],['qc_summary'],,2026-04-16 07:03:09.879192
+117,Quality Control,PROFILE_CHLA_QC,Data quality flags,,,,['data_quality_assessment'],['qc_summary'],,2026-04-16 07:03:09.879192

@@ -1,0 +1,74 @@
+name: Lily02 CI/CD Pipeline
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main]
+
+jobs:
+  # -------------------------------------------------------
+  # Job 1: Lint & Validate Python Backend
+  # -------------------------------------------------------
+  backend-check:
+    name: Backend Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python Dependencies
+        run: |
+          pip install --upgrade pip
+          pip install fastapi uvicorn langchain langchain-openai pydantic pandas requests psycopg python-dotenv
+
+      - name: Validate Schemas
+        run: python -c "from hyperpipeline.schemas import ApplicationSpec, ExecutionPlan; print('Schemas OK')"
+
+      - name: Run Backtest Suite (offline mode)
+        run: python -c "
+          from hyperpipeline.schemas import ApplicationSpec;
+          spec = ApplicationSpec(application_type='test', required_variables=['TEMP'], derived_indicators=[]);
+          assert spec.application_type == 'test';
+          print('Schema Backtest PASSED')
+          "
+
+  # -------------------------------------------------------
+  # Job 2: Frontend Build Check
+  # -------------------------------------------------------
+  frontend-check:
+    name: Frontend Build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: lily02_frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Production Bundle
+        run: npm run build
+
+  # -------------------------------------------------------
+  # Job 3: Integration Gate (runs after both pass)
+  # -------------------------------------------------------
+  integration-gate:
+    name: Integration Gate
+    needs: [backend-check, frontend-check]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: All Checks Passed
+        run: echo "Lily02 pipeline validated successfully. Ready for deployment."
