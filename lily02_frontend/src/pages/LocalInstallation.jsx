@@ -10,8 +10,8 @@ export default function LocalInstallation() {
         setTimeout(() => setCopied(null), 2000);
     };
 
-    const installCommand = "pip install lily02-agentic";
-    const launchCommand = "lily02 ask 'What is the current OHC trend?' --automl";
+    const installCommand = "pip install lily02";
+    const launchCommand = "lily02 chat";
 
     return (
         <div className="main-content" style={{ padding: '2rem 4rem' }}>

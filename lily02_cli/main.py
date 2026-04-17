@@ -15,6 +15,7 @@ from rich.table import Table
 from rich.text import Text
 from rich.align import Align
 from rich.prompt import Prompt
+import subprocess
 
 # Initialize Console
 console = Console()
@@ -139,6 +140,28 @@ def ask(query):
         console.print(Panel(Markdown(r.json()["lily_response"]), title="Lily02 Intelligence"))
     except Exception as e:
         console.print(f"[red]Error:[/] {str(e)}")
+
+@main.command()
+def hub():
+    """Start the Web Hub (Workstation + Public Tunnel)."""
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    recovery_script = os.path.join(root, "recovery.py")
+    
+    if not os.path.exists(recovery_script):
+        console.print(f"[red]Error:[/] Could not find recovery.py at {recovery_script}")
+        return
+
+    console.print("[cyan]🌊 Launching Lily02 Scientific Hub...[/]")
+    console.print(f"[dim]Project Root: {root}[/]")
+    
+    # Launch recovery.py in a new process
+    try:
+        # On Windows, we use 'start' to launch it in a new window so the user can see log output
+        subprocess.Popen(["python", recovery_script], cwd=root, creationflags=subprocess.CREATE_NEW_CONSOLE)
+        console.print("[green]SUCCESS: Web Hub launched in a new terminal window.[/]")
+        console.print("[yellow]Wait ~30 seconds for the Ngrok tunnel to stabilize.[/yellow]")
+    except Exception as e:
+        console.print(f"[red]Failed to launch hub:[/] {str(e)}")
 
 if __name__ == "__main__":
     main()

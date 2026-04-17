@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, BarChart2, Activity, Shield, Code, HelpCircle, FileText, Anchor } from 'lucide-react';
+import { Home, BarChart2, Activity, Shield, Code, HelpCircle, FileText, Anchor, Layers } from 'lucide-react';
 
 export default function Sidebar() {
     const links = [
